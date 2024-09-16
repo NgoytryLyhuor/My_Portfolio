@@ -1,0 +1,455 @@
+*{
+    font-family:"Roboto" !important;
+}
+::selection {
+    background-color: #ffc107;
+    color: #fff;
+} 
+.re_navbar{
+    display: none !important;
+}
+.re_slide_menu{
+    display: none;
+}
+/* loading */
+.loading{
+    height: 100vh;
+    background-color: #111418;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+.spinner {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.spinner .dot {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.spinner .dot::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(12, 180, 231);
+}
+
+@keyframes spin {
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+.spinner .dot {
+    animation: spin 2s infinite;
+}
+
+.spinner .dot:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+.spinner .dot:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+.spinner .dot:nth-child(4) {
+    animation-delay: 300ms;
+}
+
+.spinner .dot:nth-child(5) {
+    animation-delay: 400ms;
+}
+/* left side */
+.left{
+    height: 100vh;
+    position: sticky !important;
+    top: 0px !important;
+    background-color: #111418;
+}
+.side_button{
+    color: #fff;
+    font-size: 18px;
+    transition: 0.1s;
+}
+.side_button:hover{
+    color: #ffc107 !important;
+}
+.profile{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    outline: 8px solid #3d3f42;
+}
+.profile img{
+    filter: brightness(0.7);
+}
+
+/* right side */
+.right{
+    background-position: top;
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("image/cover.png");
+}
+.lay_1{
+    height: 100vh;
+}
+.lay_1 button{
+    width: 146px;
+    height: 52px;
+    color: #ffc107;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 3px solid #ffc107;
+    transition: 0.6s;
+    background-color: #11141800;
+}
+.lay_1 button:hover{
+    background-color: #ffc107;
+    color: #fff;
+}
+.lay_1 h1{
+    color: #fff;
+}
+.lay_1 i{
+    font-size: 40px;
+    color: #fff;
+    animation: arrow 2s infinite;
+    opacity: 0;
+}
+@keyframes arrow{
+    100%{
+        transform: translateY(60px);
+        opacity: 1;
+    }
+}
+.auto_typing{
+    font-size: 400%;
+    font-weight: 600;
+}
+
+
+.lay_2{
+    padding-bottom: 50px;
+    background-color: #212529;
+}
+.back_word{
+    font-size: 100px;
+    color: #3e444a !important;
+    font-weight: 700;
+    padding-top: 100px !important;
+    letter-spacing: 5px;
+}
+.lay_2 h3{
+    top: 139px;
+    font-size: 33px;
+    font-weight: 600;
+    border-bottom: 3px solid #ffc107;
+}
+.myself{
+    margin-top: 300px;
+}
+.myself p{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+.myself p span{
+    color: #ffc107;
+}
+.about_me_rigth p{
+    font-size: 18px;
+}
+.about_me_rigth a button{
+    width: 146px;
+    height: 52px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 3px solid #ffc107;
+    transition: 0.6s;
+    background-color: #ffc107;
+}
+.lay_2 h6{
+    color: #7988a4;
+    font-size: 18px;
+}
+.exper div:not(.exper div:nth-child(4)){
+    border-right: 2px dotted #282e39;
+}
+.exper h1{
+    font-size: 50px;
+    color: #7988a4;
+}
+.exper p{
+    font-size: 18px;
+}
+
+.lay_3{
+    background-color: #343a40;
+}
+.lay_3 h3{
+    top: 139px;
+    font-size: 33px;
+    font-weight: 600;
+    border-bottom: 3px solid #ffc107;
+}
+.skill{
+    margin-top: 280px;
+    width: 80% !important;
+}
+.box{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.lay_4{
+    background-color: #212529;
+}
+.lay_4 h3{
+    top: 139px;
+    font-size: 33px;
+    font-weight: 600;
+    border-bottom: 3px solid #ffc107;
+}
+.resume{
+    margin-top: 300px;
+    width: 95% !important;
+}
+.resume_block{
+    background-color: #111418;
+    border-radius: 5px;
+}
+.resume_block span{
+    padding: 2px 5px;
+    color: #fff;
+    background-color: #ffc107;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.resume_block p{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.resume_block h4{
+    margin-top: 40px;
+}
+.resume_block h6{
+    color: #ffc107;
+    font-size: 16px;
+}
+.progress{
+    background-color: #111418 !important;
+}
+.progress-bar{
+    background-color: #ffc107 !important;
+}
+.circle{
+    display: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    background-color: #11141863;
+    z-index: 9999999;
+    transition: 0.2px;
+}
+.circle:hover{
+    background-color: #ffc107;
+}
+.circle i{
+    font-size: 30px;
+}
+.lay_6{
+    background-color: #212529;
+}
+.lay_6 h3{
+    top: 139px;
+    font-size: 33px;
+    font-weight: 600;
+    border-bottom: 3px solid #ffc107;
+}
+.contact{
+    margin-top: 300px;
+    width: 95% !important;
+}
+.resume h5{
+    color: #dee3e4 !important;
+    font-size: 18px;
+    line-height: 20px;
+}
+.resume li{
+    font-size: 18px;
+    color: #dee3e4 !important;
+}
+.resume button{
+    background-color: #111418;
+}
+.feedback input{
+    width: 95%;
+    background-color: #343a40;
+    border-radius: 8px;
+    border: none;
+    padding: 13px 0 13px 20px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    
+}
+.feedback textarea{
+    width: 97.6%;
+    border-radius: 8px;
+    background-color: #343a40;
+    border: none;
+    padding: 13px;
+    font-size: 18px;
+    color: #fff;
+}
+.feedback button{
+    width: 204px;
+    height: 52px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 50px;
+    border: 3px solid #ffc107;
+    transition: 0.6s;
+    background-color: #ffc107;
+}
+
+.lay_5{
+    background-color: #343a40;
+}
+.lay_5 h3{
+    top: 139px;
+    font-size: 33px;
+    font-weight: 600;
+    border-bottom: 3px solid #ffc107;
+}
+.portfolio{
+    margin-top: 300px;
+    width: 95% !important;
+}
+.portfolio li{
+    cursor: pointer;
+}
+.block{
+    border-radius: 8px;
+    height: 247px;
+    float: left;
+    overflow: hidden;
+}
+.portfolio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+    border-radius: 8px;
+}
+.block:hover img{
+    filter: brightness(0.3);
+    transform: scale(1.05);
+}
+.block:hover .text{
+    margin-top: 0px;
+}
+.block .text{
+    margin-top: 500px;
+    transition: .5s;
+}
+
+
+
+
+
+
+/* responsive */
+@media (max-width: 768px){
+    .exper div:not(.exper div:nth-child(4)){
+        border-right: 0px dotted #ff0000;
+    }
+    .exper div:nth-child(1){
+        border-right: 2px dotted #282e39 !important;
+    }
+    .exper div:nth-child(2){
+        border-bottom: 2px dotted #282e39 !important;
+    }
+    .exper div:nth-child(3){
+        border-top: 2px dotted #282e39 !important;
+    }
+    .exper div:nth-child(4){
+        border-left: 2px dotted #282e39 !important;
+    }
+    .skill h2{
+        text-align: center !important;
+    }
+
+}
+
+@media (max-width: 992px){
+    .right{
+        background-size: auto  ;
+    }
+    .left{
+        display: none !important;
+    }
+    .re_navbar{
+        display: block !important;
+        height: 66px;
+        background-color: #111418;
+        position: fixed;
+        top: -1px;
+        z-index: 99999999;
+    }
+    .re_slide_menu{
+        position: fixed;
+        top: 65px;
+        z-index: 99999999;
+        background-color: #111418;
+    }
+    .re_socail p{
+        width: 30px !important;
+        height: 3px !important;
+        background-color: #fff;
+        padding: 0;
+        margin: 0;
+        border-radius: 10px;
+        transition: 0.2s;
+    }
+    .re_socail P:nth-child(2){
+        margin: 5px 0;
+    }
+    .re_menu_icon{
+        background-color: #11141800;
+        border: none;
+        margin-left: 5px;
+    }
+    .back_word{
+        font-size: 60px;
+        top: 80px;
+    }
+    .myself{
+        margin-top: 300px;
+    }
+    .myself,.skill,.contact,.portfolio{
+        margin-top: 0;
+    }
+    .myself,.contact,.skill,.portfolio{
+        padding-top: 300px;
+    }
+}
+@media (max-width: 575px){
+    .back_word{
+        padding-top: 45px !important;
+    }
+}
